@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adhyan Raghav — Cybersecurity Portfolio</title>
+  <meta name="description"
+    content="Adhyan Raghav, B.Tech Computer Science student focused on security operations, threat detection, and cybersecurity.">
+  <meta name="theme-color" content="#E9EDF0">
+  <meta property="og:title" content="Adhyan Raghav — Cybersecurity Portfolio">
+  <meta property="og:description" content="SOC lab work, cybersecurity projects, training, and contact details.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400..700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="wrap top">
+    <nav aria-label="Sections">
+      <a href="#soc-lab">SOC lab</a>
+      <a href="#projects">Projects</a>
+      <a href="#training">Education & training</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="name">
+      <div class="hero-text">
+        <h1 id="name"><span>Adhyan</span> <span>Raghav</span></h1>
+        <p class="lead">Final-year B.Tech Computer Science student focused on cybersecurity and security operations. I
+          build Python security tools and work with logs, network traffic, and vulnerability testing. Currently seeking
+          a SOC Analyst or Cybersecurity internship.</p>
+        <p class="actions">
+          <a class="btn" href="mailto:adhyanraghav@gmail.com">Email me</a>
+          <a class="btn btn-quiet" href="Adhyan-Raghav-Resume.pdf">Download résumé</a>
+        </p>
+      </div>
+
+      <aside class="alert" aria-label="Profile summary">
+        <p class="alert-title">Profile</p>
+        <dl class="log">
+          <div>
+            <dt>target_role</dt>
+            <dd>SOC Analyst / Cybersecurity Intern</dd>
+          </div>
+          <div>
+            <dt>education</dt>
+            <dd>B.Tech CSE (CNCS), 2023–2027</dd>
+          </div>
+          <div>
+            <dt>university</dt>
+            <dd>Galgotias University</dd>
+          </div>
+          <div>
+            <dt>cgpa</dt>
+            <dd>8.02</dd>
+          </div>
+          <div>
+            <dt>location</dt>
+            <dd>Greater Noida, India</dd>
+          </div>
+          <div>
+            <dt>focus</dt>
+            <dd>SIEM, log analysis, network security</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+
+    <section id="soc-lab" class="block" aria-labelledby="h-soc">
+      <h2 id="h-soc" class="gutter">SOC lab</h2>
+      <div class="body">
+        <article class="project">
+          <h3>Splunk-Based Linux SOC Home Lab</h3>
+          <p>Built a Linux security monitoring lab using Splunk Enterprise to ingest and analyse authentication logs for
+            suspicious activity. Developed SPL searches for authentication failures, targeted accounts, and repeated
+            login failure patterns.</p>
+          <p>Created an interactive dashboard with authentication-failure KPIs, time-series analysis, user- and
+            host-based visualisations, and an event investigation table. Investigated raw events using timestamps,
+            usernames, hosts, authentication services, and log details.</p>
+          <dl class="facts">
+            <div>
+              <dt>Focus</dt>
+              <dd>SIEM, authentication monitoring, SPL, event investigation</dd>
+            </div>
+            <div>
+              <dt>Environment</dt>
+              <dd>Linux, Splunk Enterprise</dd>
+            </div>
+            <div>
+              <dt>View on github</dt>
+              <dd><a href="https://github.com/AdhyanRaghav/splunk-linux-soc-lab" target="_blank" rel="noopener">View on
+                  Github</a></dd>
+            </div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="block" aria-labelledby="h-projects">
+      <h2 id="h-projects" class="gutter">Projects</h2>
+      <div class="body">
+        <article class="project">
+          <h3>Mini Vulnerability Scanner</h3>
+          <p>Developed a modular Python web security scanner to identify missing HTTP security headers, insecure cookie
+            configurations, HTTPS misconfigurations, and information-disclosure issues.</p>
+          <p>Added heuristic checks for potentially exposed sensitive files, with content-based validation to reduce
+            false positives. Built a local test server to simulate misconfigurations and validate findings, with JSON
+            and HTML reports and unit tests for core detection modules.</p>
+          <dl class="facts">
+            <div>
+              <dt>Built with</dt>
+              <dd>Python, Requests, Git</dd>
+            </div>
+            <div>
+              <dt>Code</dt>
+              <dd><a href="https://github.com/AdhyanRaghav/mini-vulnerability-scanner" target="_blank"
+                  rel="noopener">View on GitHub</a></dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="project">
+          <h3>File Integrity Checker</h3>
+          <p>Built a File Integrity Monitoring tool that detects unauthorised file creation, modification, and deletion
+            by comparing SHA-256 hashes against a stored baseline.</p>
+          <p>Tracks file size, permissions, UID/GID ownership, timestamps, and inode metadata. The baseline uses
+            cryptographic signature verification to detect tampering with the reference data itself. Structured logs and
+            alerts report integrity violations for investigation.</p>
+          <dl class="facts">
+            <div>
+              <dt>Built with</dt>
+              <dd>Python, SHA-256, Linux</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>File integrity, baseline verification, security alerts</dd>
+            </div>
+            <div>
+              <dt>Code</dt>
+              <dd><a href="https://github.com/AdhyanRaghav/File_Integrity_Checker" target="_blank" rel="noopener">View
+                  on Github</a></dd>
+            </div>
+          </dl>
+        </article>
+
+        <article class="project">
+          <h3>AI-Gated Encrypted Secure Folder</h3>
+          <p>Built a two-layer protection system in which LBPH face authentication unlocks a gocryptfs-encrypted volume,
+            keeping stored data unreadable even if the storage directory is copied.</p>
+          <p>Used majority voting across multiple confidence predictions over a three-second webcam window. Automated
+            secure mounting and unmounting, including automatic unmount after two minutes of inactivity, and applied
+            Linux file permissions for defence in depth.</p>
+          <dl class="facts">
+            <div>
+              <dt>Built with</dt>
+              <dd>Python, OpenCV, Linux, gocryptfs</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Biometric authentication, encryption, access control</dd>
+            </div>
+            <div>
+              <dt>Code</dt>
+              <dd><a href="https://github.com/AdhyanRaghav/AI-Gated_Encrypted_Secure_Folder-Linux-" target="_blank"
+                  rel="noopener">View on Github</a></dd>
+            </div>
+          </dl>
+        </article>
+      </div>
+    </section>
+
+
+    <section id="training" class="block" aria-labelledby="h-training">
+      <h2 id="h-training" class="gutter">Education & training</h2>
+      <div class="body">
+        <ul class="records">
+          <li>
+            <p class="rec-title">B.Tech, Computer Science (CNCS)</p>
+            <p class="rec-meta">Galgotias University · Greater Noida · 2023–2027 · 8.02 CGPA</p>
+          </li>
+
+          <li>
+            <p class="rec-title">
+              <a href="https://www.coursera.org/account/accomplishments/specialization/LBJXG5EKQO6J" target="_blank"
+                rel="noopener">
+                Google Cybersecurity Professional Certificate
+              </a>
+            </p>
+            <p class="rec-meta">Google · Coursera · Completed</p>
+          </li>
+
+          <li>
+            <p class="rec-title">
+              <a href="https://trainings.internshala.com/view_certificate/25igfd4p6e1/326cjg5mys6/" target="_blank"
+                rel="noopener">
+                Ethical Hacking Training
+              </a>
+            </p>
+            <p class="rec-meta">Internshala · Completed · 90% score</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section id="skills" class="block" aria-labelledby="h-skills">
+      <h2 id="h-skills" class="gutter">Technical skills</h2>
+      <div class="body">
+        <dl class="facts">
+          <div>
+            <dt>Security & SOC</dt>
+            <dd>Splunk, SIEM fundamentals, log analysis, incident response basics, MITRE ATT&CK, Wireshark, packet
+              analysis, Nmap</dd>
+          </div>
+          <div>
+            <dt>Offensive / AppSec</dt>
+            <dd>OWASP Top 10, Burp Suite, SQL injection, XSS, vulnerability assessment, cryptography</dd>
+          </div>
+          <div>
+            <dt>Languages</dt>
+            <dd>Python, C++, Java, SQL</dd>
+          </div>
+          <div>
+            <dt>Web & databases</dt>
+            <dd>HTML5, CSS, JavaScript, MySQL, REST APIs, Spring Boot</dd>
+          </div>
+          <div>
+            <dt>Platforms</dt>
+            <dd>Linux (Zorin OS / Ubuntu), Git, command line</dd>
+          </div>
+        </dl>
+        <p class="note">Problem solving: 160+ Data Structures and Algorithms problems solved across Codeforces and
+          LeetCode.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="block" aria-labelledby="h-contact">
+      <h2 id="h-contact" class="gutter">Contact</h2>
+      <div class="body">
+        <p>I'm available for SOC Analyst and cybersecurity internship opportunities. The quickest way to reach me is
+          email.</p>
+        <p class="email"><a href="mailto:adhyanraghav@gmail.com">adhyanraghav@gmail.com</a></p>
+        <ul class="links">
+          <li><a href="https://github.com/AdhyanRaghav" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/AdhyanRaghav" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="Adhyan-Raghav-Resume.pdf">Résumé (PDF)</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Adhyan Raghav · 2026 · Built with plain HTML and CSS.</p>
+  </footer>
+</body>
+
+</html>
